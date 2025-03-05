@@ -50,11 +50,22 @@ from sys import *
 from os import *
 
 n = int(input())
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    return fibonacci(n-1)+fibonacci(n-2)
+# def fibonacci(n):
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     return fibonacci(n-1)+fibonacci(n-2)
 
-print(fibonacci(n))
+# print(fibonacci(n))
+
+fib = [1,1]
+for i in range(2,n):
+    fib.append(fib[i-1] + fib[i-2])
+print(fib[-1])
+
+
+
+
+        
+    
