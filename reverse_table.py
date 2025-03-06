@@ -13,9 +13,14 @@
 # Code starts from here.
 
 n = int(input())
-i = 10
-ans = []
-while(i>=1):
-    ans.append(n*i)
-    i=i-1
-print(ans)
+
+def reverseTable(n):
+    i = 10
+    ans = []
+    while(i>=1):
+        ans.append(n*i)
+        i=i-1
+    print(ans)
+    # return ans
+
+reverseTable(n)
